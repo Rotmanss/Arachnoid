@@ -14,20 +14,21 @@ class Client:
         try:
             self.client_sock.connect((self.Host, self.Port))
             init_msg = self.client_sock.recv(256).decode('utf-8')
-            print(init_msg + '\n')
+            print(init_msg)
 
             while True:
-                message = input('type smt:\n')
+                message = input('\ntype smt:\n')
                 self.client_sock.send(message.encode('utf-8'))
 
                 data = self.client_sock.recv(256).decode('utf-8')
-                print('Answer:\n', data)
-                # if 'get_strings' in message:
-                #     string_quantity = int(init_msg[-1])
-                #     for j in range(string_quantity):
-                #         data = self.client_sock.recv(256).decode('utf-8')
-                #         print(data)
-                #     print()
+
+                if 'get_strings' in message or '=' in message:
+                    strings_list = [x for x in data.strip('[]').split(', ')]
+                    for i, value in enumerate(strings_list):
+                        value = value.replace('\'', '')
+                        print(f'{i})', value.strip())
+                else:
+                    print('Answer:\n', data)
 
                 if 'stop' in data:
                     logging.info(f'Connection closed.')

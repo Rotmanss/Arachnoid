@@ -1,5 +1,6 @@
 import socket
 import logging
+import re
 
 
 class Server:
@@ -8,6 +9,8 @@ class Server:
         self.Port = 1026
 
         self.client = None
+        self.strings_to_edit = \
+            ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
         self.sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.run_server()
 
@@ -33,8 +36,7 @@ class Server:
                         self.client.send(answer.encode('utf-8'))
                         break
 
-                    if 'get_strings' not in answer:
-                        self.client.send(answer.encode('utf-8'))
+                    self.client.send(answer.encode('utf-8'))
 
                 except Exception as exp:
                     print('Exception:', exp)
@@ -65,21 +67,40 @@ class Server:
             elif msg.lower() == 'who':
                 return self.who()
             elif msg.lower() == 'get_strings':
-                for j in self.strings_to_edit():
-                    self.client.send(j.encode('utf-8'))
-                return 'get_strings'
+                return self.strings_to_edit
+            elif msg[0] == '=':
+                return self.parse_request(msg[1:])
             else:
-                return msg
+                return 'This command is not supported!'
         else:
             return 'Empty request'
+
+    def parse_request(self, msg):
+        pattern = re.compile(r"([0-4])\:(\d*)\-\>(\w{0,30})")
+        it = re.match(pattern, msg)
+        if it:
+            pure_msg = it.group(0, 1, 2, 3)
+
+            str_index = int(pure_msg[1])
+            char_pos = int(pure_msg[2])
+            char = pure_msg[3]
+
+            try:
+                current = list(self.strings_to_edit[str_index])
+                current[char_pos] = char
+                self.strings_to_edit[str_index] = "".join(current)
+            except Exception as exp:
+                print('Exception:', exp)
+                return f'Exception: {exp}'
+        else:
+            print('Wrong string index')
+            return 'Wrong string index'
+
+        return self.strings_to_edit
 
     @staticmethod
     def initial_message():
         return 'You can edit given strings, total string amount is 5'
-
-    @staticmethod
-    def strings_to_edit():
-        return ['Hello World!\n', 'Goodbye Space!\n', 'I like pasta\n', 'Please enter your name\n', 'My name is Roman\n']
 
     @staticmethod
     def final_message():
