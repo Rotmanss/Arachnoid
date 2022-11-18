@@ -1,0 +1,36 @@
+2022-11-18 23:16:02,206 - INFO - Server was run
+2022-11-18 23:16:03,754 - INFO - Connected to a client ('127.0.0.1', 60280)
+2022-11-18 23:16:03,754 - INFO - Sent info
+2022-11-18 23:16:03,755 - INFO - Listening to the client
+2022-11-18 23:16:07,134 - INFO - Client's message: who
+2022-11-18 23:16:07,134 - INFO - Sent answer: Pevny Roman, K25, V1, 'String editor'
+2022-11-18 23:16:07,893 - INFO - Client's message: a
+2022-11-18 23:16:07,894 - INFO - Sent answer: This command is not supported!
+2022-11-18 23:16:11,616 - INFO - Client's message: get_strings
+2022-11-18 23:16:11,616 - INFO - Sent answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-18 23:16:14,982 - INFO - Client's message: =0:3->GGGGG
+2022-11-18 23:16:14,983 - INFO - Sent answer: ['HelGGGGGo World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-18 23:16:16,562 - INFO - Client's message: stop
+2022-11-18 23:16:16,562 - INFO - Send answer: stop
+You have just ended this program!
+2022-11-18 23:16:16,562 - INFO - Stop marker founded.
+2022-11-18 23:16:16,563 - INFO - Connection closed.
+2022-11-18 23:16:16,563 - INFO - 
+------------------------------
+
+2022-11-18 23:17:09,547 - INFO - Server was run
+2022-11-18 23:17:12,608 - INFO - Connected to a client ('127.0.0.1', 60353)
+2022-11-18 23:17:12,608 - INFO - Sent info
+2022-11-18 23:17:12,608 - INFO - Listening to the client
+2022-11-18 23:17:17,428 - INFO - Client's message: get_strings
+2022-11-18 23:17:17,428 - INFO - Sent answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-18 23:17:50,810 - INFO - Client's message: =4:11->GGGGG
+2022-11-18 23:17:50,811 - INFO - Sent answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is GGGGGnton']
+2022-11-18 23:18:11,886 - INFO - Client's message: stop
+2022-11-18 23:18:11,887 - INFO - Send answer: stop
+You have just ended this program!
+2022-11-18 23:18:11,887 - INFO - Stop marker founded.
+2022-11-18 23:18:11,887 - INFO - Connection closed.
+2022-11-18 23:18:11,887 - INFO - 
+------------------------------
+
