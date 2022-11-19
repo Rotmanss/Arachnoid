@@ -127,7 +127,7 @@ class Server:
                "Command list:\n\t" \
                "1)'who' : returns information about author.\n\t" \
                "2)'get_strings' : returns strings for editing, to edit string use command '3)'\n\t" \
-               "3)'=string index' : 'char index in selected string' -> 'your char(s)'\n\t" \
+               "3)'=string index : char index in selected string -> your char(s)' : it changes selected string\n\t" \
                "P.S: You can add <= 30 chars, everything above 30 will be ignored!\n\t" \
                "Example: =0:9->G\n\t" \
                "4)'stop' : stops the session"

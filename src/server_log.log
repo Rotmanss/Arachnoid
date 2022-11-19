@@ -34,3 +34,15 @@ You have just ended this program!
 2022-11-18 23:18:11,887 - INFO - 
 ------------------------------
 
+2022-11-19 20:24:40,452 - INFO - Server was run
+2022-11-19 20:24:46,473 - INFO - Connected to a client ('127.0.0.1', 53246)
+2022-11-19 20:24:46,473 - INFO - Sent info
+2022-11-19 20:24:46,473 - INFO - Listening to the client
+2022-11-19 20:24:56,219 - INFO - Client's message: stop
+2022-11-19 20:24:56,219 - INFO - Send answer: stop
+You have just ended this program!
+2022-11-19 20:24:56,219 - INFO - Stop marker founded.
+2022-11-19 20:24:56,219 - INFO - Connection closed.
+2022-11-19 20:24:56,219 - INFO - 
+------------------------------
+

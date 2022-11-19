@@ -9,7 +9,7 @@ Command list:
 
 2)'get_strings' : returns strings for editing, to edit string use command '3)'
 
-3)'=string index' : 'char index in selected string' -> 'your char(s)'
+3)'=string index : char index in selected string -> your char(s)' : it changes selected string
 
 P.S: You can add <= 30 chars, everything above 30 will be ignored!
 

@@ -19,7 +19,7 @@ class Client:
         try:
             self.client_sock.connect((self.Host, self.Port))
             logging.info(f'Connected to a server {self.Host}')
-            init_msg = self.client_sock.recv(400).decode('utf-8')
+            init_msg = self.client_sock.recv(441).decode('utf-8')
             print(init_msg)
 
             while True:
