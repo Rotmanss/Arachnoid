@@ -50,3 +50,31 @@ You have just ended this program!
 2022-11-19 20:25:44,308 - INFO - Connected to a client ('127.0.0.1', 53307)
 2022-11-19 20:25:44,308 - INFO - Sent info
 2022-11-19 20:25:44,309 - INFO - Listening to the client
+2022-11-19 20:54:58,794 - INFO - Client's message: stop
+2022-11-19 20:54:58,796 - INFO - Send answer: stop
+You have just ended this program!
+2022-11-19 20:54:58,796 - INFO - Stop marker founded.
+2022-11-19 20:54:58,796 - INFO - Connection closed.
+2022-11-19 20:54:58,796 - INFO - 
+------------------------------
+
+2022-11-19 20:55:24,653 - INFO - Server was run
+2022-11-19 20:55:26,407 - INFO - Connected to a client ('127.0.0.1', 58910)
+2022-11-19 20:55:26,408 - INFO - Sent info
+2022-11-19 20:55:26,408 - INFO - Listening to the client
+2022-11-19 20:55:29,370 - INFO - Client's message: who
+2022-11-19 20:55:29,370 - INFO - Sent answer: Pevny Roman, K25, V1, 'String editor'
+2022-11-19 20:55:34,159 - INFO - Client's message: get_strings
+2022-11-19 20:55:34,160 - INFO - Sent answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-19 20:56:12,315 - INFO - Client's message: =0:0->228J
+2022-11-19 20:56:12,316 - INFO - Sent answer: ['228Jello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-19 20:56:18,754 - INFO - Client's message: a
+2022-11-19 20:56:18,755 - INFO - Sent answer: This command is not supported!
+2022-11-19 20:56:21,198 - INFO - Client's message: stop
+2022-11-19 20:56:21,199 - INFO - Send answer: stop
+You have just ended this program!
+2022-11-19 20:56:21,199 - INFO - Stop marker founded.
+2022-11-19 20:56:21,199 - INFO - Connection closed.
+2022-11-19 20:56:21,199 - INFO - 
+------------------------------
+

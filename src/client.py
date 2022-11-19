@@ -23,7 +23,7 @@ class Client:
             print(init_msg)
 
             while True:
-                message = input('\ntype smt:\n')
+                message = input('\nWrite command:\n')
                 self.client_sock.send(message.encode('utf-8'))
                 logging.info(f'Sent request: {message}')
 

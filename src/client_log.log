@@ -1,10 +1,14 @@
-2022-11-18 23:17:12,607 - INFO - Client socket created
-2022-11-18 23:17:12,608 - INFO - Connected to a server 127.0.0.1
-2022-11-18 23:17:17,428 - INFO - Sent request: get_strings
-2022-11-18 23:17:17,428 - INFO - Received answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
-2022-11-18 23:17:50,810 - INFO - Sent request: =4:11->GGGGG
-2022-11-18 23:17:50,811 - INFO - Received answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is GGGGGnton']
-2022-11-18 23:18:11,886 - INFO - Sent request: stop
-2022-11-18 23:18:11,887 - INFO - Received answer: stop
+2022-11-19 20:55:26,405 - INFO - Client socket created
+2022-11-19 20:55:26,407 - INFO - Connected to a server 127.0.0.1
+2022-11-19 20:55:29,370 - INFO - Sent request: who
+2022-11-19 20:55:29,370 - INFO - Received answer: Pevny Roman, K25, V1, 'String editor'
+2022-11-19 20:55:34,159 - INFO - Sent request: get_strings
+2022-11-19 20:55:34,160 - INFO - Received answer: ['Hello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-19 20:56:12,315 - INFO - Sent request: =0:0->228J
+2022-11-19 20:56:12,316 - INFO - Received answer: ['228Jello World!', 'Goodbye Space!', 'I like pasta', 'Please enter your name', 'My name is Anton']
+2022-11-19 20:56:18,755 - INFO - Sent request: a
+2022-11-19 20:56:18,755 - INFO - Received answer: This command is not supported!
+2022-11-19 20:56:21,198 - INFO - Sent request: stop
+2022-11-19 20:56:21,199 - INFO - Received answer: stop
 You have just ended this program!
-2022-11-18 23:18:11,887 - INFO - Connection closed.
+2022-11-19 20:56:21,199 - INFO - Connection closed.
