@@ -46,3 +46,7 @@ You have just ended this program!
 2022-11-19 20:24:56,219 - INFO - 
 ------------------------------
 
+2022-11-19 20:25:41,847 - INFO - Server was run
+2022-11-19 20:25:44,308 - INFO - Connected to a client ('127.0.0.1', 53307)
+2022-11-19 20:25:44,308 - INFO - Sent info
+2022-11-19 20:25:44,309 - INFO - Listening to the client
