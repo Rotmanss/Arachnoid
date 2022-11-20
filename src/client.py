@@ -24,6 +24,8 @@ class Client:
 
             while True:
                 message = input('\nWrite command:\n')
+                if message is '':
+                    message = ' '
                 self.client_sock.send(message.encode('utf-8'))
                 logging.info(f'Sent request: {message}')
 
